@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url("images/bg.jpg");
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 40px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.left img {
+  width: 80px;
+  filter: invert(100%);
+}
+
+.left div {
+  text-align: center;
+  font-size: 22px;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  text-decoration: underline;
+  color: gray;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: gray;
+  color: white;
+  border: 2px solid rgb(48, 47, 47);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  flex-shrink: 0;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+  width: 100%;
+  max-width: 400px;
+  margin: 60px;
+  padding: 30px 50px;
+  border-radius: 28px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-group div {
+    width: 100%;
+}
+
+label {
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+ width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+}
